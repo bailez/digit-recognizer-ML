@@ -26,4 +26,4 @@ for i in range(240,250):
 label = range(1, len(prediction) + 1)
 df = pd.DataFrame(data = zip(label, prediction),columns = ['ImageId','Label'])
 os.chdir(r'../submissions')
-df.to_csv('tree-py.csv')
+df.to_csv('tree-py.csv',index=False)
